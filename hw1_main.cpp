@@ -39,6 +39,7 @@ int main(int argc, char* argv[]) {
 		print_index("TCP");
 		print_content(tcp_file, "tcp", 0, filter);
 		print_content(tcp6_file, "tcp6", 1, filter);
+        cout << endl;
 	}
 	if(udp_flag || !have_argument) {
 		udp_file.open(UDP_INFO_PATH, ios::in);
@@ -46,6 +47,7 @@ int main(int argc, char* argv[]) {
     	print_index("UDP");
     	print_content(udp_file, "udp", 0, filter);
     	print_content(udp6_file, "udp6", 1, filter);
+        cout << endl;
 	}
 	return 0;
 }
